@@ -5,11 +5,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
         devServer: {
-            port: 3000,
+            port: 4000,
             historyApiFallback: true
         },
         entry: {
-            home: './pages/home/index.js'
+            home: './pages/home/index.js',
+            aura: './pages/aura/index.js',
+            auraHome: './pages/auraHome/index.js',
+            cryak: './pages/cryak/index.js'
         },
         output: {
             path: path.join(__dirname, "/build"),
